@@ -11,21 +11,19 @@ Multi-contrast MRI sequences provide complementary anatomical and pathological i
 
 ## Quick Start
 
-### 训练
+### Train
 
 ```bash
 python main.py --model PSSR --dataset BraTSReg --upscale 4 --batch_size 8 --image_size 256
 ```
 
-### 测试
+### Test
 
 ```bash
 python val.py --model PSSR --dataset BraTSReg --upscale 4
 ```
 
-### 数据集
-
-支持以下数据集：
-- **BraTSReg** — 脑部MRI (T1/T2)
-- **IXI** — 脑部MRI (T1/T2)
-- **CHAOS** — 腹部CT/MRI（跨域泛化测试）
+### Dataset
+- **BraTSReg** — Brain MRI (T1/T2)
+- **IXI** — MRI (T1/T2)
+- **CHAOS** — CT/MRI（跨域泛化测试）
